@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #1f2a44;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.images-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.images-grid img,
+.card img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #1f2a44;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #31406a;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 15px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.info{
+    margin-top: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+    }
+
+    .price-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    nav a {
+        margin: 10px;
+    }
+}
+.contacts-wrapper{
+   width: 900px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.contacts-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #333;
+}
+.contacts-item img{
+    width: 20px;
+    height: 20px;
+}
+.contacts-info{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
